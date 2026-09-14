@@ -14,6 +14,55 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Portfolio Website Rajesh</title>
+
+    <style>
+      /* Wrapper to hold both button rows */
+      .home-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        max-width: fit-content;
+      }
+
+      /* Top Row: Buttons side-by-side */
+      .home-btns {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+      }
+
+      /* Bottom Row: Centered directly below the top row buttons */
+      .home-socials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      /* Circle Icon Buttons for Socials */
+      .home-social-link {
+        width: 44px;
+        height: 44px;
+        background-color: var(--container-color, #2b2a2a);
+        border: 2px solid var(--first-color, #7257fa);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--title-color, #fff);
+        font-size: 1.35rem;
+        transition: all 0.3s ease;
+      }
+
+      .home-social-link:hover {
+        background-color: var(--first-color, #7257fa);
+        color: #fff;
+        transform: translateY(-3px);
+      }
+    </style>
   </head>
   <body>
     <!--=============== NAVBAR ===============-->
@@ -56,32 +105,104 @@
 
     <!--=============== MAIN ===============-->
     <main class="main">
-    <!--=============== HOME ===============-->
-    <section class="home-container grid">
-      <img src="assets/img/profile.jpeg" class="home-img">
-      
+      <!--=============== HOME ===============-->
+      <section class="home-container grid">
+        <img src="assets/img/profile.jpeg" class="home-img" alt="Rajesh Patro" />
 
-      <div class="home-content">
-      <h1 class="home-title">
-        <span>I'm Rajesh Patro</span>
-       <br/>
-          Web Designer
-        </h1>
+        <div class="home-content">
+          <h1 class="home-title">
+            <span>I'm Rajesh Patro</span>
+            <br />
+            AI/ML Engineer
+          </h1>
 
-        <p class="home-description">
-          I am a Indian web designer & front-end developer focused on crafting clean & user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
-        </p>
+          <p class="home-description">
+            Pre-final year CSE student building end-to-end machine learning pipelines, LLM-powered systems, and applied deep learning models[cite: 1]. Experienced in taking intelligent systems from raw data to full-stack deployment[cite: 1].
+          </p>
 
-        <a href="about.html" class="button">
-          More About Me
-          <span class="button-icon">
-            <i class="ri-arrow-right-line"></i>
-          </span>
-        </a>
-      </div>
+          <div class="home-actions">
+            <!-- Top Row: More About Me & Download CV -->
+            <div class="home-btns">
+              <a href="about.html" class="button">
+                More About Me
+                <span class="button-icon">
+                  <i class="ri-arrow-right-line"></i>
+                </span>
+              </a>
 
-      <div class="color-block"></div>
-    </section>
+              <a
+                href="assets/pdf/Rajesh_Kumar_Patro_CV.pdf"
+                download="Rajesh_Kumar_Patro_CV.pdf"
+                target="_blank"
+                class="button"
+              >
+                Download CV
+                <span class="button-icon">
+                  <i class="ri-download-2-line"></i>
+                </span>
+              </a>
+            </div>
+
+            <!-- Bottom Row: Social Icon Buttons centered underneath -->
+            <div class="home-socials">
+              <!-- LinkedIn -->
+              <a
+                href="https://linkedin.com/in/rajesh-kumar-patro-ab5307356"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home-social-link"
+                title="LinkedIn"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                href="https://github.com/rajesh23092023"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home-social-link"
+                title="GitHub"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:rajeshpatra95561@gmail.com"
+                class="home-social-link"
+                title="Email"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+
+              <!-- X (Twitter) -->
+              <a
+                href="https://x.com/Rajesh__patro"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home-social-link"
+                title="X (Twitter)"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/rajesh__patro__/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="home-social-link"
+                title="Instagram"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="color-block"></div>
+      </section>
     </main>
 
     <!--=============== STYLE SWITCHER ================-->
@@ -97,21 +218,13 @@
       <h3 class="switcher-title">Style Switcher</h3>
 
       <div class="switcher-items grid">
-
-        <img src="assets/img/orange.png" alt="" class="theme-img" style="--hue: 19">
-        
-        <img src="assets/img/blueviolet.png" alt="" class="theme-img" style="--hue: 271">
-
-        <img src="assets/img/blue.png" alt="" class="theme-img" style="--hue: 225">
-
-        <img src="assets/img/magenta.png" alt="" class="theme-img" style="--hue: 339">
-
-        <img src="assets/img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80">
-
-        <img src="assets/img/red.png" alt="" class="theme-img" style="--hue: 4">
-
-        <img src="assets/img/yellow.png" alt="" class="theme-img" style="--hue: 42">
-        
+        <img src="assets/img/orange.png" alt="" class="theme-img" style="--hue: 19" />
+        <img src="assets/img/blueviolet.png" alt="" class="theme-img" style="--hue: 271" />
+        <img src="assets/img/blue.png" alt="" class="theme-img" style="--hue: 225" />
+        <img src="assets/img/magenta.png" alt="" class="theme-img" style="--hue: 339" />
+        <img src="assets/img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80" />
+        <img src="assets/img/red.png" alt="" class="theme-img" style="--hue: 4" />
+        <img src="assets/img/yellow.png" alt="" class="theme-img" style="--hue: 42" />
       </div>
 
       <div class="switcher-close" id="switcher-close">&times;</div>

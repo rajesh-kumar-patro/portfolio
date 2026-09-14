@@ -1,261 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!--=============== REMIXICON ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Portfolio Website Rajesh</title>
+  </head>
 
-  <title>Portfolio Website Rajesh</title>
-</head>
+  <body>
+    <!--=============== NAVBAR ===============-->
+    <nav class="nav">
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list grid">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-4-line nav-icon"></i>
+              <h3 class="nav-name">Home</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <i class="ri-user-3-line nav-icon"></i>
+              <h3 class="nav-name">About</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link active-link">
+              <i class="ri-folder-2-line nav-icon"></i>
+              <h3 class="nav-name">Portfolio</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              <i class="ri-mail-open-line nav-icon"></i>
+              <h3 class="nav-name">Contact</h3>
+            </a>
+          </li>
+        </ul>
 
-<body>
-  <!--=============== NAVBAR ===============-->
-  <nav class="nav">
-    <div class="nav-menu" id="nav-menu">
-      <ul class="nav-list grid">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            <i class="ri-home-4-line nav-icon"></i>
-            <h3 class="nav-name">Home</h3>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            <i class="ri-user-3-line nav-icon"></i>
-            <h3 class="nav-name">About</h3>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="portfolio.html" class="nav-link active-link">
-            <i class="ri-folder-2-line nav-icon"></i>
-            <h3 class="nav-name">Portfolio</h3>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            <i class="ri-mail-open-line nav-icon"></i>
-            <h3 class="nav-name">Contact</h3>
-          </a>
-        </li>
-      </ul>
-
-      <i class="ri-close-line nav-close" id="nav-close"></i>
-    </div>
-
-    <div class="nav-toggle" id="nav-toggle">
-      <i class="ri-menu-line"></i>
-    </div>
-  </nav>
-
-  <!--=============== MAIN ===============-->
-  <main class="main">
-    <!--=============== PORTFOLIO ===============-->
-    <section class="portfolio section">
-      <h2 class="section-title">
-        My <span>Portfolio</span>
-      </h2>
-
-      <div class="portfolio-container container grid">
-
-         <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-5.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Neuro-Spark-Virtual-Assistant</h3>
-          <p class="portfolio-description">A virtual assistant built with HTML, CSS, and JavaScript that responds to user input, performs tasks, and enhances productivity..</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://neuro-spark-assistant-rajesh.netlify.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-        
-        <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-1.jpeg" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Music-player-clone</h3>
-          <p class="portfolio-description">A stylish music player clone built with HTML and CSS, featuring song details,
-            playback controls, and a responsive user interface.</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://music-player-lyart-seven.vercel.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-
-        <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-2.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">AI chat bot</h3>
-          <p class="portfolio-description">An AI chatbot built with Next.js, Node.js, and JavaScript, offering smooth
-            UI, and seamless backend integration.</p>
-          <br>
-          <br>
-          <div class="portfolio-skills">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://ai-sand-delta.vercel.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-
-        <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-3.jpeg" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Gaming-UI</h3>
-          <p class="portfolio-description">A dynamic 3D gaming UI built with HTML, CSS, JavaScript, and React, featuring
-            interactive elements, animations, and responsive design.</p>
-          <br>
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/react-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="#" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-
-        <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-4.jpeg" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Netflix-clone</h3>
-          <p class="portfolio-description">A Netflix clone designed using HTML and CSS, featuring a good layout, movie
-            thumbnails, navigation bar, and modern UI styling.</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="#" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-
-                <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-6.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Foodie (Food-Delivery)</h3>
-          <p class="portfolio-description">A foodie website built using HTML, CSS, and JavaScript to explore recipes, share reviews, and discover delicious dishes with ease.</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://foodie-food-delivery-rajesh.netlify.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-     <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-7.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Number Guessing Game</h3>
-          <p class="portfolio-description">Created a fun number guessing game using HTML, CSS, and JavaScript—great for beginners to practice logic and interactivity skills!</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://number-guessing-game-rajesh.netlify.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-        <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-8.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">Email Validator</h3>
-          <p class="portfolio-description">Built an Email Validator using HTML, CSS, and JavaScript that instantly checks email format and shows real-time validation feedback.</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://email-validator-rajeshpatro.netlify.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-
-         <article class="portfolio-card">
-          <a href="#" class="portfolio-img-wrapper">
-            <img src="assets/img/project-9.png" alt="" class="portfolio-img">
-          </a>
-
-          <h3 class="portfolio-title">BuzzBuy (Shopping Website)</h3>
-          <p class="portfolio-description">BuzzBuy is a responsive shopping website built using HTML, CSS, and JavaScript, offering smooth user experience and dynamic product interaction.</p>
-
-          <div class="portfolio-skills">
-            <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill">
-            <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill">
-          </div>
-
-          <a href="https://buzzbuy-shopping-website-rajeshpatro.netlify.app/" target="_blank" class="portfolio-link">
-            <i class="ri-link link-icon"></i>
-            Visit Project
-          </a>
-        </article>
-        
+        <i class="ri-close-line nav-close" id="nav-close"></i>
       </div>
-    </section>
-  </main>
 
-  <!--=============== STYLE SWITCHER ===============-->
-  <div class="style-switcher" id="style-switcher">
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section">
+        <h2 class="section-title">My <span>Portfolio</span></h2>
+
+        <div class="portfolio-container container grid">
+          <!-- ================= NEW AI & ML PROJECTS (AT THE TOP) ================= -->
+          
+                    <!-- 1. Spam Mail Detector -->
+          <article class="portfolio-card">
+            <a
+              href="https://github.com/rajesh23092023/Spam-mail-detector"
+              target="_blank"
+              class="portfolio-img-wrapper"
+            >
+              <img
+                src="assets/img/spam mail .jpeg"
+                alt="Spam Mail Detector"
+                class="portfolio-img"
+              />
+            </a>
+
+            <h3 class="portfolio-title">Spam Mail Detector</h3>
+            <p class="portfolio-description">
+              Naive Bayes text classification pipeline with TF-IDF vectorization, achieving >95% accuracy on held-out evaluation datasets[cite: 1].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/Pandas.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/NumPy.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/scikit-learn.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://github.com/rajesh23092023/Spam-mail-detector"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-github-line link-icon"></i>
+              GitHub Repo
+            </a>
+          </article>
+
+
+          <!-- 2. Fake News Detection -->
+          <article class="portfolio-card">
+            <a
+              href="https://github.com/rajesh23092023"
+              target="_blank"
+              class="portfolio-img-wrapper"
+            >
+              <img
+                src="assets/img/fake-news-detector-960.jpg"
+                alt="Fake News Detection"
+                class="portfolio-img"
+              />
+            </a>
+
+            <h3 class="portfolio-title">Fake News Detection (NLP)</h3>
+            <p class="portfolio-description">
+              NLP classification pipeline built on the ISOT dataset comparing BoW/TF-IDF across ML models; achieved ~99.8% accuracy with Random Forest[cite: 1].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/python.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/scikit-learn.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/Pandas.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/NumPy.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/Hugging-Face--Streamline-Svg-Logos.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://github.com/rajesh23092023/Fake_News_Detections.git"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-github-line link-icon"></i>
+              GitHub Repo
+            </a>
+          </article>
+
+          <!-- 3. WhatsApp Chat Analyzer -->
+          <article class="portfolio-card">
+            <a
+              href="https://github.com/rajesh23092023/Whatsapp-Chat-Analysis"
+              target="_blank"
+              class="portfolio-img-wrapper"
+            >
+              <img
+                src="assets/img/WhatsApp Chat Analyser.png"
+                alt="WhatsApp Chat Analyzer"
+                class="portfolio-img"
+              />
+            </a>
+
+            <h3 class="portfolio-title">WhatsApp Chat Analyser</h3>
+            <p class="portfolio-description">
+              Parses exported chats for usage timelines, activity maps, and word clouds using a custom Hinglish stopword parser; deployed on Streamlit Cloud[cite: 1].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/python.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/scikit-learn.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/Streamlit.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/LLM.webp" alt="" class="portfolio-skill" />
+              <img src="assets/img/Pandas.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/NumPy.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://github.com/rajesh23092023/Whatsapp-Chat-Analysis"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+                    <!-- 4. AI Chatbot -->
+          <article class="portfolio-card">
+            <a
+              href="https://ai-sand-delta.vercel.app/"
+              target="_blank"
+              class="portfolio-img-wrapper"
+            >
+              <img src="assets/img/project-2.png" alt="AI Chatbot" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">AI Chatbot (GenAI)</h3>
+            <p class="portfolio-description">
+              Full-stack conversational AI interface using Next.js with server-side API routes integrating Google Gemini as the LLM backend[cite: 1].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/react-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://ai-sand-delta.vercel.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- ================= EXISTING WEB DEVELOPMENT PROJECTS ================= -->
+
+          <!-- 5. Neuro-Spark -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-5.png" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Neuro-Spark-Virtual-Assistant</h3>
+            <p class="portfolio-description">
+              A virtual assistant built with HTML, CSS, and JavaScript that responds to user input, performs tasks, and enhances productivity[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://neuro-spark-assistant-rajesh.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 6. Music Player -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-1.jpeg" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Music-player-clone</h3>
+            <p class="portfolio-description">
+              A stylish music player clone built with HTML and CSS, featuring song details, playback controls, and a responsive user interface[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://music-player-lyart-seven.vercel.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 7. Gaming UI -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-3.jpeg" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Gaming-UI</h3>
+            <p class="portfolio-description">
+              A dynamic 3D gaming UI built with HTML, CSS, JavaScript, and React, featuring interactive elements, animations, and responsive design[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/react-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a href="#" class="portfolio-link">
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 8. Netflix Clone -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-4.jpeg" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Netflix-clone</h3>
+            <p class="portfolio-description">
+              A Netflix clone designed using HTML and CSS, featuring a good layout, movie thumbnails, navigation bar, and modern UI styling[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a href="#" class="portfolio-link">
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 9. Foodie -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-6.png" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Foodie (Food-Delivery)</h3>
+            <p class="portfolio-description">
+              A foodie website built using HTML, CSS, and JavaScript to explore recipes, share reviews, and discover delicious dishes with ease[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://foodie-food-delivery-rajesh.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 10. Number Guessing Game -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-7.png" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Number Guessing Game</h3>
+            <p class="portfolio-description">
+              Created a fun number guessing game using HTML, CSS, and JavaScript—great for beginners to practice logic and interactivity skills[cite: 5]!
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://number-guessing-game-rajesh.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 11. Email Validator -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-8.png" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">Email Validator</h3>
+            <p class="portfolio-description">
+              Built an Email Validator using HTML, CSS, and JavaScript that instantly checks email format and shows real-time validation feedback[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://email-validator-rajeshpatro.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+
+          <!-- 12. BuzzBuy -->
+          <article class="portfolio-card">
+            <a href="#" class="portfolio-img-wrapper">
+              <img src="assets/img/project-9.png" alt="" class="portfolio-img" />
+            </a>
+
+            <h3 class="portfolio-title">BuzzBuy (Shopping Website)</h3>
+            <p class="portfolio-description">
+              BuzzBuy is a responsive shopping website built using HTML, CSS, and JavaScript, offering smooth user experience and dynamic product interaction[cite: 5].
+            </p>
+
+            <div class="portfolio-skills">
+              <img src="assets/img/html-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/css-logo.svg" alt="" class="portfolio-skill" />
+              <img src="assets/img/javascript-logo.svg" alt="" class="portfolio-skill" />
+            </div>
+
+            <a
+              href="https://buzzbuy-shopping-website-rajeshpatro.netlify.app/"
+              target="_blank"
+              class="portfolio-link"
+            >
+              <i class="ri-link link-icon"></i>
+              Visit Project
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== STYLE SWITCHER ===============-->
+    <div class="style-switcher" id="style-switcher">
       <div class="switcher-toggler" id="switcher-toggler">
         <i class="ri-settings-4-line"></i>
       </div>
@@ -267,28 +430,19 @@
       <h3 class="switcher-title">Style Switcher</h3>
 
       <div class="switcher-items grid">
-
-        <img src="assets/img/orange.png" alt="" class="theme-img" style="--hue: 19">
-        
-        <img src="assets/img/blueviolet.png" alt="" class="theme-img" style="--hue: 271">
-
-        <img src="assets/img/blue.png" alt="" class="theme-img" style="--hue: 225">
-
-        <img src="assets/img/magenta.png" alt="" class="theme-img" style="--hue: 339">
-
-        <img src="assets/img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80">
-
-        <img src="assets/img/red.png" alt="" class="theme-img" style="--hue: 4">
-
-        <img src="assets/img/yellow.png" alt="" class="theme-img" style="--hue: 42">
-        
+        <img src="assets/img/orange.png" alt="" class="theme-img" style="--hue: 19" />
+        <img src="assets/img/blueviolet.png" alt="" class="theme-img" style="--hue: 271" />
+        <img src="assets/img/blue.png" alt="" class="theme-img" style="--hue: 225" />
+        <img src="assets/img/magenta.png" alt="" class="theme-img" style="--hue: 339" />
+        <img src="assets/img/yellowgreen.png" alt="" class="theme-img" style="--hue: 80" />
+        <img src="assets/img/red.png" alt="" class="theme-img" style="--hue: 4" />
+        <img src="assets/img/yellow.png" alt="" class="theme-img" style="--hue: 42" />
       </div>
 
       <div class="switcher-close" id="switcher-close">&times;</div>
     </div>
 
-  <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
